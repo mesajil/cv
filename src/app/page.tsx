@@ -101,6 +101,7 @@ export default function Page() {
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
+            if (!work.show) return;
             return (
               <Card key={work.company}>
                 <CardHeader>
