@@ -1,9 +1,10 @@
 import { ConsultlyLogo, JojoMobileLogo, NSNLogo } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { ResumeData } from "./types";
 
-export const RESUME_DATA = {
+const RESUME_DATA: ResumeData = {
   name: "Luis Mesajil",
-  initials: "BJ",
+  initials: "LM",
   location: "Lima, Perú, UTC",
   locationLink: "https://www.google.com/maps/place/Lima",
   about:
@@ -98,12 +99,12 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
     "React.js",
-    "React Native",
-    "Redux",
     "Node.js",
+    "TypeScript",
+    "React Native",
+    "Redux.js",
+    "JavaScript",
     "HTML",
     "CSS",
     "SQL",
@@ -161,4 +162,10 @@ export const RESUME_DATA = {
       },
     },
   ],
-} as const;
+};
+
+RESUME_DATA.work.forEach((e) => {
+  e.story = `In ${e.company} as ${e.title}: ${e.description}`;
+});
+
+export { RESUME_DATA };
