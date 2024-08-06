@@ -102,6 +102,7 @@ const RESUME_DATA: ResumeData = {
     "React.js",
     "Node.js",
     "TypeScript",
+    "Express.js",
     "React Native",
     "Redux.js",
     "JavaScript",
@@ -109,9 +110,10 @@ const RESUME_DATA: ResumeData = {
     "CSS",
     "SQL",
     "Git/Github",
-    "Express.js",
+    "GCP",
     "Postman",
     "Scrum",
+    "Python",
   ],
   projects: [
     {
