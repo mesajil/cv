@@ -1,5 +1,4 @@
 import { ConsultlyLogo, JojoMobileLogo, NSNLogo } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { ResumeData } from "./types";
 import basics from "@/data/basics";
 
@@ -79,10 +78,14 @@ const resume: ResumeData = {
     "HTML",
     "CSS",
     "SQL",
+    "PostgreSQL",
     "Git/Github",
     "Express.js",
     "Postman",
     "Scrum",
+    "Python",
+    "Docker",
+    "ETL Tools",
   ],
   projects: [
     {
