@@ -20,7 +20,7 @@ export interface Basics {
     network: string;
     username: string;
     url: string;
-    icon: React.ComponentType;
+    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   }>;
 }
 
