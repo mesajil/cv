@@ -1,39 +1,10 @@
 import { ConsultlyLogo, JojoMobileLogo, NSNLogo } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { ResumeData } from "./types";
+import basics from "@/data/basics";
 
-const RESUME_DATA: ResumeData = {
-  name: "Luis Mesajil",
-  initials: "LM",
-  location: "Lima, Perú, UTC",
-  locationLink: "https://www.google.com/maps/place/Lima",
-  about:
-    "Full Stack Engineer prioritizing high-quality, scalable products with a focus on user experience.",
-  summary:
-    "With a background in computer engineering, I bring extensive experience in developing both frontend and backend applications using technologies such as React, React Native, and Node.js. I'm well-versed in agile development frameworks like Scrum and Gitflow, ensuring efficient collaboration and code management throughout the development lifecycle. Across my projects, I've successfully implemented various functionalities including user authentication, chatbots, RESTful APIs, payment gateways, cron jobs, email notifications, and relational database development.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/45523084?v=4",
-  personalWebsiteUrl: "",
-  contact: {
-    email: "lhmesajil@gmail.com",
-    tel: "+51940709267",
-    social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/mesajil",
-        icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/lhmesajil/",
-        icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/LuisMesajil",
-        icon: XIcon,
-      },
-    ],
-  },
+const resume: ResumeData = {
+  basics,
   education: [
     {
       school: "SoyHenry",
@@ -164,8 +135,8 @@ const RESUME_DATA: ResumeData = {
   ],
 };
 
-RESUME_DATA.work.forEach((e) => {
+resume.work.forEach((e) => {
   e.story = `In ${e.company} as ${e.title}: ${e.description}`;
 });
 
-export { RESUME_DATA };
+export { resume };

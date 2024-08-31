@@ -1,14 +1,28 @@
-export type SocialLink = {
+export interface Basics {
   name: string;
-  url: string;
-  icon: any; // Ajusta el tipo según el tipo de tu icono, por ejemplo, React.ComponentType si estás usando React
-};
-
-export type Contact = {
+  initials: string;
+  label: string;
+  image: string;
   email: string;
-  tel: string;
-  social: SocialLink[];
-};
+  phone: string;
+  url: string;
+  about: string;
+  summary: string;
+  location: {
+    address: string;
+    postalCode: string;
+    city: string;
+    countryCode: string;
+    region: string;
+    link: string;
+  };
+  profiles: Array<{
+    network: string;
+    username: string;
+    url: string;
+    icon: React.ComponentType;
+  }>;
+}
 
 export type Education = {
   school: string;
@@ -42,15 +56,7 @@ export type Project = {
 };
 
 export type ResumeData = {
-  name: string;
-  initials: string;
-  location: string;
-  locationLink: string;
-  about: string;
-  summary: string;
-  avatarUrl: string;
-  personalWebsiteUrl: string;
-  contact: Contact;
+  basics: Basics;
   education: Education[];
   work: WorkExperience[];
   skills: string[];
