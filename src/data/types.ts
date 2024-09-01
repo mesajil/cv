@@ -24,25 +24,27 @@ export interface Basics {
   }>;
 }
 
-export type Education = {
-  school: string;
-  degree: string;
+export interface Education {
+  institution: string;
+  url?: string;
+  area?: string;
+  studyType?: string;
   start: string;
   end: string;
-};
+  score?: string;
+  courses?: string[];
+}
 
-export type WorkExperience = {
+export interface Work {
   company: string;
   link: string;
-  badges: string[];
+  highlights: string[];
   title: string;
-  logo: any; // Ajusta el tipo según el tipo de tu logo, por ejemplo, React.ComponentType si estás usando React
   start: string;
   end: string;
   description: string;
   show: boolean;
-  story?: string;
-};
+}
 
 export type Project = {
   title: string;
@@ -57,8 +59,8 @@ export type Project = {
 
 export type ResumeData = {
   basics: Basics;
+  work: Work[];
   education: Education[];
-  work: WorkExperience[];
   skills: string[];
   projects: Project[];
 };
