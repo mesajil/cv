@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 import { Section } from '@/components/ui/section'
 import { GlobeIcon, MailIcon, PhoneIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { resume } from '@/data/resume-data'
+import { resume } from '@/resume'
 import { ProjectCard } from '@/components/project-card'
 
 export const metadata: Metadata = {
@@ -116,11 +116,11 @@ export default function Page() {
             {resume.projects.map(project => {
               return (
                 <ProjectCard
-                  key={project.title}
-                  title={project.title}
+                  key={project.name}
+                  title={project.name}
                   description={project.description}
-                  tags={project.techStack}
-                  link={'link' in project ? project.link.href : undefined}
+                  tags={project.highlights}
+                  link={'url' in project ? project.url : undefined}
                 />
               )
             })}
@@ -147,9 +147,11 @@ export default function Page() {
         <Section>
           <h2 className='text-xl font-bold'>Skills</h2>
           <div className='flex flex-wrap gap-1'>
-            {resume.skills.map(skill => {
-              return <Badge key={skill}>{skill}</Badge>
-            })}
+            {resume.skills
+              .flatMap(skill => skill.keywords)
+              .map(skill => {
+                return <Badge key={skill}>{skill}</Badge>
+              })}
           </div>
         </Section>
       </section>
