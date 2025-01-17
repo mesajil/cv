@@ -4,32 +4,29 @@ const skills: Skill[] = [
   {
     name: 'Web Development',
     level: 'Intermediate',
-    keywords: ['React.js', 'TypeScript', 'Redux.js', 'Node.js', 'Express.js', 'Python', 'Postman'],
-  },
-  {
-    name: 'Web Development',
-    level: 'Intermediate',
-    keywords: ['JavaScript'],
-  },
-  {
-    name: 'Web Development',
-    level: 'Intermediate',
-    keywords: ['HTML'],
-  },
-  {
-    name: 'Web Development',
-    level: 'Intermediate',
-    keywords: ['CSS'],
+    keywords: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'React.js',
+      'Redux.js',
+      'Node.js',
+      'Express.js',
+      'Python',
+      'Postman',
+      'BigCommerce',
+    ],
   },
   {
     name: 'Databases',
     level: 'Intermediate',
-    keywords: ['PostgreSQL', 'SQL'],
+    keywords: ['PostgreSQL', 'PL/SQL'],
   },
   {
     name: 'Devops',
     level: 'Advanced',
-    keywords: ['Git/Github', 'Docker'],
+    keywords: ['Git/Github', 'Docker', 'GCP', 'Snowflake'],
   },
   {
     name: 'Web Development',
@@ -39,12 +36,12 @@ const skills: Skill[] = [
   {
     name: 'Web Development',
     level: 'Advanced',
-    keywords: ['ETL Tools'],
+    keywords: ['Airflow'],
   },
   {
     name: 'Mobile Development',
     level: 'Beginner',
-    keywords: ['React Native'],
+    keywords: ['React Native', '.NET MAUI'],
   },
 ]
 

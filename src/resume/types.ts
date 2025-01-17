@@ -42,7 +42,7 @@ export interface Work {
   title: string
   start: string
   end: string
-  description: string
+  description: string[]
   show: boolean
 }
 

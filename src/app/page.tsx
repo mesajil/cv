@@ -105,7 +105,11 @@ export default function Page() {
 
                   <h4 className='font-mono text-sm leading-none'>{work.title}</h4>
                 </CardHeader>
-                <CardContent className='mt-2 text-xs'>{work.description}</CardContent>
+                <CardContent className='mt-2 text-xs'>
+                  {work.description.map((desc, index) => (
+                    <p key={index}>{desc}</p>
+                  ))}
+                </CardContent>
               </Card>
             )
           })}
