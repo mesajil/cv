@@ -156,7 +156,7 @@ const resume: ResumeData = {
         'Firebase',
         'Scrum',
       ],
-      url: 'https://storecalzado.vercel.app/',
+      url: 'https://github.com/Luis901810/eCommerce_frontend',
     },
     {
       name: 'GymSpace',
