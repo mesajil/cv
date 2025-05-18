@@ -49,7 +49,7 @@ const resume: ResumeData = {
       highlights: [],
       title: 'Full Stack Developer',
       start: '2024',
-      end: 'Present',
+      end: '2025',
       description: [
         'As part of my role, I was responsible for delivering a range of projects, including the following key tasks:',
         "> BigCommerce Interface Development: I developed custom user interfaces for e-commerce stores using BigCommerce's Stencil CLI framework, ensuring optimal performance and seamless user experience.",
