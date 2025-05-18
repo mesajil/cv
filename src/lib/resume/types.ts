@@ -46,12 +46,6 @@ export interface Work {
   show: boolean
 }
 
-export interface Skill {
-  name: string
-  level: string
-  keywords: string[]
-}
-
 export interface Project {
   name: string
   startDate: string
@@ -65,6 +59,6 @@ export type ResumeData = {
   basics: Basics
   work: Work[]
   education: Education[]
-  skills: Skill[]
+  skills: string[]
   projects: Project[]
 }
