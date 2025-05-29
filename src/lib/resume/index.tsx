@@ -136,6 +136,8 @@ const resume: ResumeData = {
     'Snowflake',
     'Docker',
     'GCP',
+    'Java',
+    'MongoDB',
   ],
   projects: [
     {
